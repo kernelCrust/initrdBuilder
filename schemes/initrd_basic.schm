@@ -1,0 +1,21 @@
+# remove all content, create epmty bone dirs
+reset
+
+# build and install mutli-tools
+	busybox	all
+		uutils
+
+# install modules
+	modules
+
+# init
+init		init_basic
+
+# chroot and run setup
+cp		setup_basic
+exec	setup
+rm		setup
+
+# pack into image
+initrd
+

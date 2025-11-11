@@ -1,0 +1,11 @@
+# simple comment
+ # comment 2
+	# comment 3
+clean
+copy		init basic
+
+	copy	busybox
+
+
+image	    			initrd
+
